@@ -1,0 +1,153 @@
+*,*::after,*::before{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(bg_img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.player-info{
+    /* width: 7rem;
+    height: 2rem; */
+    padding: 0.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(219, 226, 239, 0.5);
+    position: absolute;
+    top: 3rem;
+    color: aliceblue;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: 1px solid whitesmoke;
+}
+
+.tix-tok-grid{
+    display: grid;
+    width: 60%;
+    max-width: 15rem;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgba(219, 226, 239, 0.5);
+    border: 1px solid whitesmoke;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    /* new property */
+    aspect-ratio: 1/1;
+    /* height: 15rem; */
+    border-radius: 1rem;
+    position: absolute;
+    top: 30%;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.tix-tok-grid:hover{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    transition-duration: 500ms;
+}
+
+.box{
+    position: relative;
+    aspect-ratio: 1/1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.box2, .box3, .box5, .box6, .box8, .box9{
+    border-left: 2px solid whitesmoke;
+}
+
+.box1, .box2, .box3, .box4,.box5, .box6{
+    border-bottom: 2px solid whitesmoke;
+}
+
+.btn{
+    all: unset;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 0.6rem;
+    border-radius: 0.9rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1.5px solid whitesmoke;
+    display: none;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    transition-duration: 500ms;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgb(18, 172, 18);
+    transition-duration: 500ms;
+}
+
+.winner{
+    background-color: black;
+    color: whitesmoke;
+    box-shadow: 2px 2px 2px 10px whitesmoke;
+    transition-duration: 500ms;
+}
+
+.devloper{
+    position: absolute;
+    left: 80%;
+    bottom: 10%;
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.devloper p{
+    color: 5px solid black;
+    font-weight: 600;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.devloper a{
+    all: unset;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+.devloper a img{
+    position: absolute;
+    bottom: 24%;
+    right: 20%;
+    align-items: center;
+}
+
